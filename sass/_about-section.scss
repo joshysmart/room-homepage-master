@@ -1,0 +1,55 @@
+.about-section {
+
+ @include media-lg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ &__left {
+  height: 266px;
+  img {
+   width: 100%; 
+   @include media-lg {
+    width: auto;
+   }
+   height: 100%;
+  }
+ }
+
+ &__right {
+  height: 266px;
+
+  img {
+   width: 100%; 
+   @include media-lg {
+    width: auto;
+   }
+   height: 266px;
+  } 
+ }
+
+ &__middle {
+  height: 266px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 1.6rem;
+
+  @include media-lg {
+   padding: 2.5rem 3rem;
+  }
+  h2 {
+   color: $Black;
+   font-size: .85rem;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 3px;
+  }
+  p {
+   color: $Dark-Gray;
+   font-size: 12px;
+   line-height: 1.3rem;
+  }
+ }
+}
