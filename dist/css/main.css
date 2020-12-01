@@ -556,7 +556,7 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .about-section__left {
     height: 266px;
   }
@@ -583,7 +583,7 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .about-section__right {
     height: 266px;
   }
@@ -631,6 +631,7 @@
 @media only screen and (min-width: 1024px) {
   .about-section__middle {
     width: 50%;
+    height: 266px;
     padding: 1.8rem 2rem;
   }
 }
@@ -638,7 +639,6 @@
 @media only screen and (min-width: 1280px) {
   .about-section__middle {
     padding: 2.5rem 3rem;
-    height: 266px;
   }
 }
 
