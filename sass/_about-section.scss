@@ -1,6 +1,6 @@
 .about-section {
 
- @include media-lg {
+ @include media-md {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +36,16 @@
   justify-content: center;
   padding: 2.5rem 1.6rem;
 
+  @include media-sm {
+   height: 350px;
+   padding: 2rem 1rem;
+  }
+
+  @include media-md {
+   width: 50%;
+   padding: 1.8rem 2rem;
+  }
+
   @include media-lg {
    padding: 2.5rem 3rem;
   }
@@ -45,6 +55,10 @@
    text-transform: uppercase;
    font-weight: 600;
    letter-spacing: 3px;
+
+   @include media-sm {
+    font-size: .65rem;
+   }
   }
   p {
    color: $Dark-Gray;

@@ -12,6 +12,18 @@
   z-index: 1;
 }
 
+@media only screen and (max-width: 350px) {
+  .header {
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .header {
     padding: 2.8rem 4rem;
@@ -26,7 +38,7 @@
   z-index: 3;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .header .burger-menu {
     display: none;
   }
@@ -36,7 +48,7 @@
   margin-left: calc(50% - 50px);
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .header .logo {
     margin: 0;
   }
@@ -47,13 +59,13 @@
   position: absolute;
   left: 1px;
   background: #fff;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .header .nav {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -69,7 +81,7 @@
   padding-left: 5rem;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .header .nav ul {
     margin: 0;
     padding-left: 4rem;
@@ -82,7 +94,13 @@
   padding: 2.1rem .7rem;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 350px) {
+  .header .nav ul li {
+    padding: 1.5rem .3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .header .nav ul li {
     padding: 1rem 1rem;
   }
@@ -93,7 +111,13 @@
   position: relative;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 350px) {
+  .header .nav ul li a {
+    font-size: .7rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .header .nav ul li a {
     color: #fff;
   }
@@ -132,7 +156,7 @@
   overflow: hidden;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .hero-section {
     display: -ms-grid;
     display: grid;
@@ -146,10 +170,16 @@
   height: 360px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero-section__left {
+    width: 540px;
+    height: 534px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .hero-section__left {
     width: 840px;
-    height: 534px;
   }
 }
 
@@ -163,7 +193,7 @@
   background-image: url("../images/mobile-image-hero-2.jpg");
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .hero-section__left .slide-2 {
     background-image: url("../images/desktop-image-hero-2.jpg");
   }
@@ -173,7 +203,7 @@
   background-image: url("../images/mobile-image-hero-0.jpg");
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .hero-section__left .slide-0 {
     background-image: url("../images/desktop-image-hero-0.jpg");
   }
@@ -183,7 +213,7 @@
   background-image: url("../images/mobile-image-hero-1.jpg");
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .hero-section__left .slide-1 {
     background-image: url("../images/desktop-image-hero-1.jpg");
   }
@@ -194,13 +224,13 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  background: #000;
   bottom: 0;
   right: 0;
+  background: #000;
   z-index: 3;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .hero-section__left .slider {
     bottom: 0;
     right: -10rem;
@@ -235,7 +265,13 @@
   overflow: hidden;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 350px) {
+  .hero-section__right {
+    height: 450px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .hero-section__right {
     height: 534px;
   }
@@ -250,7 +286,19 @@
 
 @media only screen and (min-width: 1280px) {
   .hero-section__right h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-section__right h1 {
     font-size: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .hero-section__right h1 {
+    font-size: 1.3rem;
   }
 }
 
@@ -267,6 +315,13 @@
   font-size: 13px;
   font-weight: 300;
   color: black;
+}
+
+@media only screen and (max-width: 350px) {
+  .hero-section__right h3 {
+    font-size: .8rem;
+    letter-spacing: 5px;
+  }
 }
 
 .hero-section__right h3 a {
@@ -299,7 +354,19 @@
   background: #fff;
 }
 
+@media only screen and (max-width: 350px) {
+  .hero-section__right__slides {
+    padding: 0 1rem;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
+  .hero-section__right__slides {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .hero-section__right__slides {
     padding: 0 6rem;
   }
@@ -453,7 +520,7 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .about-section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -512,6 +579,20 @@
   padding: 2.5rem 1.6rem;
 }
 
+@media only screen and (max-width: 350px) {
+  .about-section__middle {
+    height: 350px;
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-section__middle {
+    width: 50%;
+    padding: 1.8rem 2rem;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .about-section__middle {
     padding: 2.5rem 3rem;
@@ -524,6 +605,12 @@
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 350px) {
+  .about-section__middle h2 {
+    font-size: .65rem;
+  }
 }
 
 .about-section__middle p {
@@ -551,6 +638,16 @@ a {
 
 .container {
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 

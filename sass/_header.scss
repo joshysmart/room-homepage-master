@@ -6,6 +6,14 @@
  position: absolute;
  z-index: 1;
 
+ @include media-sm {
+  padding: 2rem 1rem;
+ }
+
+ @include media-md {
+  padding: 2rem 3rem;
+ }
+
  @include media-lg {
   padding: 2.8rem 4rem;
  }
@@ -17,14 +25,14 @@
   cursor: url('../images/cursor.svg'), auto;
   z-index: 3;
 
-  @include media-lg {
+  @include media-md {
    display: none;
   }
  }
  .logo {
   margin-left: calc(50% - 50px);
 
-  @include media-lg {
+  @include media-md {
    margin: 0; 
   }
  }
@@ -34,10 +42,10 @@
   position: absolute;
   left: 1px;
   background: #fff;
-  transform: translateX(-100%);
+  transform: translateX(-150%);
   transition: all .4s ease;
 
-  @include media-lg {
+  @include media-md {
    transform: translateX(0);
    position: static;
    background: 0;
@@ -46,23 +54,32 @@
   ul {
    display: flex;
    padding-left: 5rem;
-   @include media-lg {
+     
+   @include media-md {
     margin: 0;
     padding-left: 4rem;
     background: 0; 
-  }
+   }
    li {
     list-style-type: none;
     padding: 2.1rem .7rem;
-    @include media-lg {
+    @include media-sm {
+     padding: 1.5rem .3rem;
+    }
+   
+    @include media-md {
      padding: 1rem 1rem;
     }
     a {
      text-transform: lowercase;
      position: relative;
-     @include media-lg {
+     @include media-sm {
+      font-size: .7rem;
+     }
+     @include media-md {
       color: #fff;
      }
+     
      &:before {
       position: absolute;
       content: '';
@@ -74,6 +91,7 @@
       transform: scale(0);
       transition: .4s ease;
      }
+     
      &:hover:before {
       transform: scale(1);
      }
@@ -81,7 +99,6 @@
    }
   }
  }  
-
  .toggle-nav {
   transform: translateX(0px);
  }

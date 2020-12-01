@@ -25,4 +25,4 @@ Your users should be able to:
 The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. This should help train your eye to perceive differences in spacings and sizes.
 
 ## solution
-View my solution [here](https://room-homepage-master-pied.vercel.app/)
+View my solution [here](https://www.frontendmentor.io/solutions/room-homepage-built-using-sass-PEDtO6-rF)

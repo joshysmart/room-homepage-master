@@ -5,8 +5,26 @@ $Black: hsl(0, 0%, 0%);
 $White: hsl(0, 0%, 100%);
 $Very-Dark-Gray: hsl(0, 0%, 27%);
 
+@mixin media-xl {
+ @media only screen and (min-width:1440px) {
+  @content;
+ }
+}
+
 @mixin media-lg {
  @media only screen and (min-width:1280px) {
+  @content;
+ }
+}
+
+@mixin media-md {
+ @media only screen and (min-width:1024px) {
+  @content;
+ }
+}
+
+@mixin media-sm {
+ @media only screen and (max-width:350px) {
   @content;
  }
 }
