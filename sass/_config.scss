@@ -24,6 +24,12 @@ $Very-Dark-Gray: hsl(0, 0%, 27%);
 }
 
 @mixin media-sm {
+ @media only screen and (min-width:380px) {
+  @content;
+ }
+}
+
+@mixin media-xsm {
  @media only screen and (max-width:350px) {
   @content;
  }
