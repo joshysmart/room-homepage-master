@@ -256,7 +256,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  padding: 1rem 1.4rem;
+  padding: 1rem 1.3rem;
   cursor: url("../images/cursor.svg"), auto;
 }
 
@@ -556,6 +556,12 @@
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .about-section__left {
+    height: 266px;
+  }
+}
+
 .about-section__left img {
   width: 100%;
   height: 100%;
@@ -574,6 +580,12 @@
 @media only screen and (min-width: 380px) {
   .about-section__right {
     height: 360px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-section__right {
+    height: 266px;
   }
 }
 
@@ -626,6 +638,7 @@
 @media only screen and (min-width: 1280px) {
   .about-section__middle {
     padding: 2.5rem 3rem;
+    height: 266px;
   }
 }
 
