@@ -202,6 +202,8 @@
 @media only screen and (min-width: 380px) {
   .hero-section__left .slide-2 {
     background-image: url("../images/desktop-image-hero-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -212,6 +214,8 @@
 @media only screen and (min-width: 380px) {
   .hero-section__left .slide-0 {
     background-image: url("../images/desktop-image-hero-0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -222,6 +226,8 @@
 @media only screen and (min-width: 380px) {
   .hero-section__left .slide-1 {
     background-image: url("../images/desktop-image-hero-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
